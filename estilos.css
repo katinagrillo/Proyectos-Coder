@@ -1,0 +1,578 @@
+/* Estilos nav */
+nav {
+    background-color: #B68C2B; 
+    display: flex;
+    width: 100%;
+    height: 90px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    position: relative;
+    left: 2rem;
+    top: 0.5rem;
+}
+
+nav ul {
+    width: 40%;
+    justify-content: space-evenly;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FCF7ED;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+/* Estilos header */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos index */
+header img {
+    width: 100%;
+    height: 80vh;  
+    top: 3rem;
+    object-fit: cover;
+}
+
+.marca {
+    font-weight: 100;
+    font-size: 20px;
+    color: #FCF7ED;
+    background-color: #b68c2b91;
+    padding: 160px 20px;
+    margin: 5px 10px;
+    position: absolute;
+    top: 110px;
+    width: 300px;
+    text-align: center;
+    height: 160px;
+}
+
+.CTA {
+    background-color: #B68C2B ;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0px;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.CTA:hover {
+    background-color: #ffffff;
+    color:#B68C2B;
+    border-style: solid;
+    border-color: #B68C2B;
+}
+
+.marca h1 span {
+    font-size: medium;
+    font-style: italic;
+}
+
+.titulo {
+    text-align: center;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.inicio {
+    width: 100%;
+    max-height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: 2rem;
+}
+
+.about {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: 2rem;
+}
+
+.parrafo {
+    max-width: 600px;
+    width: 500px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 1rem;
+    padding: 70px 50px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-stretch: expanded;
+    text-align: center;
+    background: rgb(252,247,237);
+    background: radial-gradient(circle, rgba(252,247,237,1) 0%, rgba(251,244,234,1) 4%, rgba(254,236,219,1) 19%, rgba(244,210,194,1) 37%, rgba(189,186,238,1) 81%);
+}
+
+.fotoInicio {
+    max-width: 500px;
+    left: 2rem;
+    min-height: 300px;
+    object-fit: cover;
+    border-radius: 2rem;
+    animation-name: mover;
+    animation-duration: 1s;
+}
+
+.fotoAbout {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 2rem;
+    animation-name: mover;
+    animation-duration: 1s;
+}
+
+@keyframes mover{
+    0% {
+        transform: translateX(-1000px); 
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.beneficios {
+    background-color: #FCF7ED;
+    width: 100%;
+    height: 300px;
+}
+
+.tips {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+.tipsUno{
+    padding: 0px 20px;
+}
+
+/* Estilos todos los H1 */
+
+.h1 {
+    text-align: center;
+    width: 100%;
+    padding: 30px 0px;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(252,247,237,1) 0%, rgba(219,188,126,1) 65%);
+}
+
+/* Estilos pagina shop */
+.productos {
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 20px;
+    border-style: solid;
+    border-color: #9BB98D;
+}
+
+.h2 {
+    text-align: center;
+    background-color: #F0DBD1;
+    padding: 20px;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15rem;
+    
+}
+
+.card {
+    width: 350px;
+    height: 380px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    border-style: solid;
+    border-color: #9BB98D;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;  
+    border-radius: 1rem; 
+}
+
+.carrito {
+    background-color: #9BB98D;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 0.5rem; 
+    font-size: 20px;
+    padding: 10px; 
+    transition: 0.5s ease;
+}
+
+.carrito:hover {
+    background-color: #ffffff;
+    color:#9BB98D;
+    border-style: solid;
+    border-color: #9BB98D;
+}
+
+/* Estilos */
+
+.formulario {
+    background-color: #F0DBD1;
+    padding: 25px;
+    margin: 5rem;
+    text-align: center;
+}
+
+.form {
+    color: #B68C2B;
+    width: 100%;
+}
+
+.formDiv {
+    padding: 10px;
+}
+
+.blog {
+   width: 100%;
+    height: 100%;
+    margin: 20px 0px;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    display: grid;
+
+    grid-column-gap: 10px;
+
+    grid-template-areas: 
+    "uno noticias"
+    "dos noticias";
+}
+
+.blogPostUno {grid-area: uno;}
+.blogPostDos {grid-area: dos;}
+.noticias {grid-area: noticias;}
+
+
+.blogPostUno {
+    width: 700px;
+    padding: 25px;
+    margin: 25px 0px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #F0DBD1;
+}
+
+.blogPostDos {
+    width: 700px;
+    padding: 25px;
+    margin: 25px 0px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #F0DBD1;
+}
+
+.blogFoto {
+    width: 700px;
+    height: 410px;
+    object-fit: cover;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogTitulo {
+    color: #B68C2B;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.blogFecha {
+    color: #5c5c5c;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.blogContenido {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.leer {
+    background-color: #F0DBD1;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+    transition: 0.5s ease;
+}
+
+.leer:hover {
+    background-color: #ffffff;
+    color:#000000;
+    border-style: solid;
+    border-color: #FCF7ED;
+}
+
+.noticias {
+    width: 250px;
+    height: 100%;
+    padding: 25px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #F0DBD1;
+    align-items: flex-start;
+}
+
+.anuncio {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F0DBD1;
+    margin: 15px 0px;
+    padding: 15px;
+}
+
+.botonAnuncio {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+}
+
+.botonAnuncio:hover {
+    color:#B68C2B;
+    text-decoration: underline;
+}
+
+/* Estilos post uno del blog */
+
+.post {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postUno {
+    width: 900px;
+}
+
+.fotoPost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotos {
+    display: flex;
+}
+
+.deco {
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos footer */
+
+footer {
+    background-color: #B68C2B;
+    width: 100%;
+    height: 150px;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+.icon {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    padding: 30px 0px;
+}
+
+.derechos {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Grid pagina de inicio */
+
+.inicio {
+    display: grid;
+    
+    grid-template-areas: 
+    "parrafo foto"
+    "parrafo foto"
+    "CTA foto";
+}
+
+.parrafo {grid-area: parrafo;}
+.fotoInicio {grid-area: foto;}
+.CTA {grid-area: CTA;}
+
+/* Responsive tablet */
+
+@media screen and (max-width: 1024px) {
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+   .marca {
+    width: 100%;
+    height: 100px;
+   }
+
+   header img {
+    height: 400px;
+   }
+
+   .titulo {
+    font-size: 20px;
+   }
+
+   .fotoInicio {
+    display: none;
+   }
+
+   .inicio {
+    align-items: flex-start;
+   }
+
+   .parrafo {
+    width: 70%;
+    height: 50px;
+    font-size: 20px;
+    background-color: #F0DBD1;
+   }
+
+   .inicioFoto {
+    height: 400px;
+   }
+
+   .h1 {
+    width: 100%;
+   }
+
+   .blog {
+    grid-column-gap: 20px;
+    
+    grid-template-areas: 
+    "uno"
+    "dos"
+    "noticias";
+   }
+
+   .noticias {
+    flex-wrap: wrap;
+    width: 70vw;
+   }
+
+   .blogPostUno {
+    width: 70vw;
+}
+
+.blogPostDos {
+    width: 70vw;
+}
+
+.noticias {
+    width: 70vw;
+    top: 5rem;
+    margin: 30px 0px;
+}
+
+.blogFoto {
+    width: 70vw;
+}
+
+}
+
+/* Responsive celular */
+
+@media screen and (max-width: 500px) {
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+    }
+
+   .marca {
+    width: 85%;
+    height: 90px;
+    flex-wrap: wrap;
+   }
+
+   header img {
+    height: 400px;
+   }
+
+   .titulo {
+    font-size: 13px;
+   }
+
+   .fotoInicio {
+    display: none;
+   }
+
+   .inicio {
+    align-items: flex-start;
+   }
+
+   .parrafo {
+    width: 60%;
+    height: 140px;
+    font-size: 15px;
+    background-color: #F0DBD1;
+    align-self: flex-start;
+   }
+
+   .inicioFoto {
+    height: 350px;
+   }
+
+   .beneficios {
+    height: 600px;
+   }
+
+   .tips {
+    flex-direction: column;
+   }
+
+}
