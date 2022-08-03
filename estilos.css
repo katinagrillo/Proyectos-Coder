@@ -201,19 +201,23 @@ header img {
     
 }
 
+
 .card {
     width: 350px;
     height: 380px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px !important;
 }
 
 .card img {
     width: 100%;
     height: 100%;  
     border-radius: 1rem; 
+    object-fit: contain;
 }
 
+/* 
 .carrito {
     background-color: #9BB98D;
     color: #ffffff;
@@ -230,6 +234,29 @@ header img {
     border-style: solid;
     border-color: #9BB98D;
 }
+*/
+
+.card-img-top {
+    object-fit: cover !important;
+}
+
+.btn-primary {
+    background-color: #9BB98D;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 0.5rem; 
+    font-size: 20px;
+    padding: 10px; 
+    transition: 0.5s ease !important;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+    color:#9BB98D;
+    border-style: solid;
+    border-color: #9BB98D !important;
+}
+
 
 /* Estilos */
 
