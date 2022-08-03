@@ -58,7 +58,6 @@ header img {
     top: 110px;
     width: 300px;
     text-align: center;
-    height: 160px;
 }
 
 .CTA {
@@ -186,8 +185,6 @@ header img {
     width: 100%;
     margin-top: 2rem;
     font-size: 20px;
-    border-style: solid;
-    border-color: #9BB98D;
 }
 
 .h2 {
@@ -209,9 +206,6 @@ header img {
     height: 380px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
-    border-style: solid;
-    border-color: #9BB98D;
 }
 
 .card img {
