@@ -78,7 +78,34 @@
 
                 <a class="CTA" href="HTML/shop.html">Llévame a la galería</a>
     
-                <img class="fotoInicio" src="Imagenes/Floreros.png" alt="Mueble de sala con articulos de decoracion">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="Imagenes/Carrusel1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/Carrusel2.jpeg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Imagenes/Carrusel3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- <img class="fotoInicio" src="Imagenes/Floreros.png" alt="Mueble de sala con articulos de decoracion"> -->
             </div>
         </div>
         
@@ -90,19 +117,23 @@
 
             <h3 class="titulo"> DALE UNA PERSONALIDAD A TU ESPACIO </h3>
 
-            <div class="tips">
-                <div class="tipsUno">
-                    <p>Encuentra tu estilo</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quidem doloribus ab a sequi delectus nostrum facere beatae suscipit? Nesciunt rerum debitis sint sapiente? Dolorum quo ducimus id ex autem!</p>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-4">
+                        <p>Encuentra tu estilo</p>
+                        <p>Tenemos diferentes estilos para que decores tu hogar: desde minimalista hasta rústico y contemporáneo</p>
+                    </div>
+                    <div class="col-4">
+                        <p>Inspirate</p>
+                        <p>Lee nuestro blog y encuentra nuevas ideas para expresar tus ideas. Tenemos nuevo post cada jueves.</p>
+                    </div>
+                    <div class="col-4">
+                        <p>Brindamos asesorias</p>
+                        <p>Contáctanos con nosotros y agenda una sesión de asesría 1 a 1.</p>
+                    </div>
                 </div>
-                <div class="tipsUno">
-                    <p>Inspirate</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quidem doloribus ab a sequi delectus nostrum facere beatae suscipit? Nesciunt rerum debitis sint sapiente? Dolorum quo ducimus id ex autem!</p>
-                </div>
-                <div class="tipsUno">
-                    <p>Brindamos asesorias</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quidem doloribus ab a sequi delectus nostrum facere beatae suscipit? Nesciunt rerum debitis sint sapiente? Dolorum quo ducimus id ex autem!</p>
-                </div>
+
             </div>
 
             
