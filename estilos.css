@@ -285,6 +285,8 @@ header img {
     padding: 10px;
 }
 
+/* Estilos pagina blog */
+
 .blog {
    width: 100%;
     height: 100%;
@@ -394,6 +396,10 @@ header img {
 .botonAnuncio:hover {
     color:#B68C2B;
     text-decoration: underline;
+}
+
+.botonAnuncio:visited {
+    color: purple;
 }
 
 /* Estilos post uno del blog */
