@@ -126,6 +126,21 @@ header img {
     background: radial-gradient(circle, rgba(252,247,237,1) 0%, rgba(251,244,234,1) 11%, rgba(254,236,219,1) 19%, rgba(244,210,194,1) 59%, rgba(238,186,188,1) 90%);
 }
 
+.parrafoAbout {
+    max-width: 600px;
+    width: 500px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 1rem;
+    padding: 70px 50px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-stretch: expanded;
+    text-align: center;
+    background: rgb(252,247,237);
+    background: radial-gradient(circle, rgba(252,247,237,1) 0%, rgba(251,244,234,1) 11%, rgba(254,236,219,1) 19%, rgba(244,210,194,1) 59%, rgba(238,186,188,1) 90%);
+}
+
 .fotoInicio {
     max-width: 500px;
     left: 2rem;
@@ -313,7 +328,7 @@ header img {
 .blogPostUno {
     width: 700px;
     padding: 25px;
-    margin: 25px 0px;
+    margin: 10px 0px;
     border-style: solid;
     border-width: 3px;
     border-color: #F0DBD1;
@@ -322,7 +337,7 @@ header img {
 .blogPostDos {
     width: 700px;
     padding: 25px;
-    margin: 25px 0px;
+    margin: 10px 0px;
     border-style: solid;
     border-width: 3px;
     border-color: #F0DBD1;
@@ -400,6 +415,10 @@ header img {
 
 .botonAnuncio::before {
     content: "♥ ";
+}
+
+.page-item:hover {
+    text-decoration: underline;
 }
 
 /* Estilos post uno del blog */
@@ -490,11 +509,11 @@ footer {
 
    .marca {
     width: 100%;
-    height: 100px;
+    height: 60vh;
    }
 
    header img {
-    height: 400px;
+    height: 70vh;
    }
 
    .titulo {
@@ -506,8 +525,23 @@ footer {
    }
 
    .inicio {
-    align-items: flex-start;
-   }
+        
+        grid-template-areas: 
+        "foto"
+        "parrafo"
+        "CTA";
+    
+    }
+
+    .slide {
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+        height: 20vh;
+    }
+
+    .container {
+        flex-direction: column !important;
+    }
 
    .parrafo {
     width: 70%;
@@ -526,11 +560,17 @@ footer {
 
    .blog {
     grid-column-gap: 20px;
+    grid-row-gap: 40px;
     
     grid-template-areas: 
     "uno"
     "dos"
+    "nav"
     "noticias";
+   }
+   .pagination {grid-area: nav;}
+   .pagination {
+    margin: 15px;
    }
 
    .noticias {
@@ -548,13 +588,29 @@ footer {
 
 .noticias {
     width: 70vw;
-    top: 5rem;
-    margin: 30px 0px;
 }
 
 .blogFoto {
     width: 70vw;
 }
+
+.about {
+    width: 100%;
+    height: 120vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parrafoAbout {
+    width: 60%;
+    font-size: 18px;
+    height: 30vh;
+}
+
+.fotoAbout {
+    height: 50vh;
+}
+
 
 }
 
@@ -572,13 +628,16 @@ footer {
     }
 
    .marca {
-    width: 85%;
-    height: 90px;
-    flex-wrap: wrap;
+    width: 95%;
+    height: 60vh;
    }
 
    header img {
-    height: 400px;
+    height: 70vh;
+   }
+
+   .inicio {
+    flex-direction: column;
    }
 
    .titulo {
@@ -612,5 +671,23 @@ footer {
    .tips {
     flex-direction: column;
    }
+
+    .about {
+    width: 100%;
+    height: 120vh;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .parrafoAbout {
+    font-size: 18px;
+    width: 60%;
+    height: 50vh;
+    }
+
+    .fotoAbout {
+    height: 50vh;
+    width: 80vw;
+    }
 
 }
