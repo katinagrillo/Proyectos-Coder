@@ -398,8 +398,8 @@ header img {
     text-decoration: underline;
 }
 
-.botonAnuncio:visited {
-    color: purple;
+.botonAnuncio::before {
+    content: "♥ ";
 }
 
 /* Estilos post uno del blog */
